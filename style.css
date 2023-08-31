@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+}
+
+body {
+  font-size: 16px;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+}
+
+form {
+  background-color: white;
+  padding: 1rem 0;
+}
+
+label {
+  display: block;
+}
+
+.main-content {
+  position: relative;
+  width: 100vw;
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #e5e7eb;
+  width: 60vw;
+}
+
+.form-container h2 {
+  margin: 5rem 2rem;
+  max-width: 40rem;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0rem 2rem 1rem;
+}
+
+label + input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+  margin: 0rem 4rem 0rem 0rem;
+  height: 1.5rem;
+}
