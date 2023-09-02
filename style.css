@@ -1,7 +1,10 @@
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap);
+
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Playfair Display", serif;
 }
 
 :root {
@@ -11,37 +14,58 @@ body {
   font-size: 16px;
 }
 
-img {
-  width: 100vw;
-  height: 100vh;
-}
-
-form {
-  background-color: white;
-  padding: 1rem 0;
-}
-
-label {
-  display: block;
-}
-
 .main-content {
   position: relative;
-  width: 100vw;
+  display: flex;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+  max-height: 100vh;
 }
 
 .form-container {
   position: absolute;
   top: 0;
   right: 0;
-  height: 100vh;
   background-color: #e5e7eb;
-  width: 60vw;
+  width: 60%;
+  padding-bottom: 2rem;
+  min-height: 100vh;
+}
+
+form {
+  background-color: white;
+  padding: 1rem 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+label {
+  display: block;
+  letter-spacing: 0.1rem;
+}
+
+button {
+  background-color: #596d48;
+  color: white;
+  margin: 2rem;
+  border-radius: 5px;
+  border: none;
+  padding: 0.7rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+a:link,
+:visited {
+  text-decoration: none;
+  color: #596d48;
 }
 
 .form-container h2 {
-  margin: 5rem 2rem;
+  margin: 8rem 2rem 5rem;
   max-width: 40rem;
+  font-weight: 500;
 }
 
 .form-row {
@@ -55,5 +79,21 @@ input[type="tel"],
 input[type="email"],
 input[type="password"] {
   margin: 0rem 4rem 0rem 0rem;
-  height: 1.5rem;
+  height: 1.8rem;
+  padding-left: 0.5rem;
+}
+
+button + p {
+  margin: 0rem 2rem;
+}
+
+.banner {
+  position: absolute;
+  top: 325px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  width: 40%;
+  text-align: center;
+  padding: 1rem;
+  color: white;
 }
