@@ -9,7 +9,6 @@ function checkPassword() {
   let enteredConfirmPass = confirmPassword.value;
   if (enteredPass === enteredConfirmPass) {
     if (enteredPass === "" || enteredConfirmPass === "") {
-      console.log(enteredPass);
       password.classList.remove("valid");
       confirmPassword.classList.remove("valid");
       password.classList.remove("error");
