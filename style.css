@@ -115,3 +115,28 @@ button + p {
     height: 150vh;
   }
 }
+
+:focus,
+.error,
+.valid {
+  border-radius: 2px;
+  outline: none;
+}
+
+:focus {
+  border: 2px solid blue;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.valid {
+  border: 2px solid green;
+}
+
+.error + p::after {
+  color: red;
+  font-size: 0.8rem;
+  content: "*Passwords do not match!";
+}
